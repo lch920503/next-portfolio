@@ -1,7 +1,6 @@
+import AboutMe from "@/src/components/about/AboutMe";
+import Layout from "@/src/components/Layout";
 import Head from "next/head";
-import Layout from "@/components/Layout";
-import ProjectList from "@/components/projects/ProjectList";
-import AboutMe from "@/components/about/AboutMe";
 
 export default function about() {
   return (

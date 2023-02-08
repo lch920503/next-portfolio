@@ -7,7 +7,7 @@ export default function ProductItem({ data }) {
   const imgSrc = data.cover.file?.url || data.cover.external.url;
 
   return (
-    <li className="mb-3 bg-slate-400 rounded-xl overflow-hidden">
+    <li className="project-card mb-3 rounded-xl overflow-hidden">
       <Image
         className="rounded-t-xl w-full max-h-80 object-cover"
         src={imgSrc}
@@ -18,7 +18,7 @@ export default function ProductItem({ data }) {
       <div className="p-4">
         <strong>{title}</strong>
         <p>{description}</p>
-        <span>
+        <span className="tags flex flex-wrap">
           {tags.map((tag) => (
             <span
               key={tag.id}

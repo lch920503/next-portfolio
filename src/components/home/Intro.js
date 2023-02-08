@@ -15,8 +15,7 @@ export default function Intro() {
               <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
               <p className="text-base break-keep">
                 안녕하세요. 프론트엔드 개발자 이채현입니다. <br />
-                코드를 일기삼아 매일 기록하고 성장하는 신입 프론트엔드
-                개발자입니다.
+                꾸준히 학습해 나가야 하는 개발 생태계를 좋아합니다!
               </p>
             </div>
           </div>

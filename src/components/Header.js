@@ -1,9 +1,9 @@
 import Link from "next/link";
-import DarkModeToggleButton from "./button/DarkModeToggleButton";
+import DarkModeToggleButton from "../components/button/DarkModeToggleButton";
 
 export default function Header() {
   return (
-    <header className="text-gray-600 body-font">
+    <header className="text-gray-600 body-font fixed z-50 w-full bg-white">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link href="/" passHref legacyBehavior>
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">

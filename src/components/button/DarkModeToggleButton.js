@@ -1,4 +1,4 @@
-import { useDarkMode } from "../../src/context/DarkModeContext";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 export default function DarkModeToggleButton() {
   const { darkMode, toggleDarkMode } = useDarkMode();
