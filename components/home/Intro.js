@@ -13,10 +13,10 @@ export default function Intro() {
                 Frontend, 이채현
               </h2>
               <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-              <p className="text-base">
+              <p className="text-base break-keep">
                 안녕하세요. 프론트엔드 개발자 이채현입니다. <br />
                 코드를 일기삼아 매일 기록하고 성장하는 신입 프론트엔드
-                개발자입니다. <br />
+                개발자입니다.
               </p>
             </div>
           </div>

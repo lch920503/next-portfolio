@@ -29,6 +29,9 @@ export default function Header() {
           <Link href="/projects" passHref legacyBehavior>
             <a className="mr-5 hover:text-gray-900">프로젝트</a>
           </Link>
+          <Link href="/about" passHref legacyBehavior>
+            <a className="mr-5 hover:text-gray-900">About Me</a>
+          </Link>
           <Link href="" passHref legacyBehavior>
             <a className="mr-5 hover:text-gray-900">연락하기</a>
           </Link>
