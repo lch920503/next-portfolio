@@ -1,12 +1,15 @@
 import Image from "next/image";
 
 export default function ProductItem({ data }) {
-  const title = data.properties.이름.title[0].plain_text;
-  const tags = data.properties.태그.multi_select;
-  const description = data.properties.이름.title[0].text.content;
+  const title = data.properties.name.title[0].plain_text;
+  const tags = data.properties.tags.multi_select;
+  const description = data.properties.name.title[0].text.content;
   const imgSrc = data.cover.file?.url || data.cover.external.url;
   const url = data.properties.URL.url;
-  console.log(url);
+  const github = data.properties.github.url;
+  const skills = data.properties.skills.rich_text[0]?.plain_text;
+  const layout = data.properties.layout.rich_text[0]?.plain_text;
+  console.log("github", github);
 
   return (
     <li className="project-card mb-3 rounded-xl overflow-hidden">
@@ -21,9 +24,23 @@ export default function ProductItem({ data }) {
       <div className="p-4">
         <strong>{title}</strong>
         <p>{description}</p>
-        <span>
-          배포주소 <a href={url}>{url}</a>
+        <span className="block mt-2 mb-1">
+          <a
+            href={github}
+            className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
+          >
+            Repository 보러가기
+          </a>
         </span>
+        <span className="block mb-1">
+          <a
+            href={url}
+            className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
+          >
+            프로젝트 보러가기
+          </a>
+        </span>
+        <span>{skills}</span>
         <span className="tags flex flex-wrap">
           {tags.map((tag) => (
             <span
@@ -34,6 +51,7 @@ export default function ProductItem({ data }) {
             </span>
           ))}
         </span>
+        <span className="block mt-1">{layout}</span>
       </div>
     </li>
   );
