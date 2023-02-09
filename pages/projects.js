@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Layout from "@/components/Layout";
 import axios from "axios";
-import ProjectList from "@/components/projects/ProjectList";
+import Layout from "@/src/components/Layout";
+import ProjectList from "@/src/components/projects/ProjectList";
 
 export default function ProjectsPage({ data }) {
   console.log(data);
@@ -21,13 +21,13 @@ export default function ProjectsPage({ data }) {
 export async function getServerSideProps(context) {
   const options = {
     method: "POST",
+    url: `https://api.notion.com/v1/databases/${process.env.NEXT_PUBLIC_NOTION_DATABASE_ID}/query`,
     headers: {
       accept: "application/json",
       "Notion-Version": "2022-06-28",
-      "content-type": "application/json",
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTION_TOKEN}`,
     },
-    body: JSON.stringify({
+    data: {
       sorts: [
         {
           property: "이름",
@@ -35,23 +35,16 @@ export async function getServerSideProps(context) {
         },
       ],
       page_size: 100,
-    }),
+    },
   };
 
-  const res = await fetch(
-    `https://api.notion.com/v1/databases/${process.env.NEXT_PUBLIC_NOTION_DATABASE_ID}/query`,
-    options
-  );
+  const res = await axios.request(options);
 
-  const data = await res.json();
-
-  const items = data.results.map(
-    (itemId) => itemId.properties.이름.title[0].plain_text
-  );
+  // console.log(res.data);
 
   return {
     props: {
-      data,
+      data: res.data,
     }, // will be passed to the page component as props
   };
 }
