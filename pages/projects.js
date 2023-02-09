@@ -18,7 +18,7 @@ export default function ProjectsPage({ data }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const options = {
     method: "POST",
     url: `https://api.notion.com/v1/databases/${process.env.NEXT_PUBLIC_NOTION_DATABASE_ID}/query`,
@@ -30,7 +30,7 @@ export async function getServerSideProps(context) {
     data: {
       sorts: [
         {
-          property: "이름",
+          property: "name",
           direction: "ascending",
         },
       ],
@@ -46,5 +46,6 @@ export async function getServerSideProps(context) {
     props: {
       data: res.data,
     }, // will be passed to the page component as props
+    revalidate: 1,
   };
 }
