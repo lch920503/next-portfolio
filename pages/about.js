@@ -2,7 +2,7 @@ import AboutMe from "@/src/components/about/AboutMe";
 import Layout from "@/src/components/Layout";
 import Head from "next/head";
 
-export default function about() {
+export default function aboutPage() {
   return (
     <Layout>
       <Head>

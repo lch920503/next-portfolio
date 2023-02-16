@@ -144,6 +144,8 @@ export default function AboutMe() {
                   <p className="text-gray-500 break-keep">
                     반응형 구현 가능
                     <br />
+                    flex 레이아웃 구현 가능
+                    <br />
                     animation/transition 등 다양한 인터랙션 구현 가능
                   </p>
                 </div>
@@ -198,7 +200,8 @@ export default function AboutMe() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Tailwind CSS
+                    Tailwind CSS / <br />
+                    styled-component (Emotion)
                   </h2>
                   <p className="text-gray-500 break-keep">
                     기본적인 사용법 숙지
@@ -275,8 +278,9 @@ export default function AboutMe() {
                     NextJS
                   </h2>
                   <p className="text-gray-500 break-keep">
-                    SSR에 대한 기본적인 이해도는 있습니다. 다수의 프로젝트를
-                    경험하여 능숙해지는 것을 목표로 하고 있습니다.
+                    SSR과 폴더/파일 기반 라우팅에 대한 기본적인 이해도는
+                    있습니다. 다수의 프로젝트를 경험하여 능숙해지는 것을 목표로
+                    하고 있습니다.
                   </p>
                 </div>
               </div>
