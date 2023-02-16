@@ -29,7 +29,7 @@ export default function Intro() {
               좋아합니다!
             </p>
             <Link href="/projects" passHref legacyBehavior>
-              <a className="w-max px-4 py-2 rounded inline-flex items-center bg-indigo-500 text-white">
+              <a className="w-max px-4 py-2 rounded inline-flex items-center bg-indigo-500 text-white mx-auto sm:mx-0">
                 프로젝트 보러가기
                 <svg
                   fill="none"

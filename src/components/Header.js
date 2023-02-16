@@ -33,7 +33,7 @@ export default function Header() {
             <a className="mr-5 hover:text-gray-900">About Me</a>
           </Link>
           <Link href="/contact" passHref legacyBehavior>
-            <a className="mr-5 hover:text-gray-900">연락하기</a>
+            <a className="mr-0 sm:mr-5 hover:text-gray-900">연락하기</a>
           </Link>
         </nav>
         <DarkModeToggleButton />
