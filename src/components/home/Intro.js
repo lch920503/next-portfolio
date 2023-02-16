@@ -15,21 +15,18 @@ export default function Intro() {
               <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
               <p className="text-base break-keep">
                 안녕하세요. 프론트엔드 개발자 이채현입니다. <br />
-                꾸준히 학습해 나가야 하는 개발 생태계를 좋아합니다!
+                노력하는 만큼 성장할 수 있는 개발 생태계를 좋아합니다!
               </p>
             </div>
           </div>
           <div className="flex flex-col justify-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-            <p className="leading-relaxed text-lg mb-4">
-              Meggings portland fingerstache lyft, post-ironic fixie man bun
-              banh mi umami everyday carry hexagon locavore direct trade art
-              party. Locavore small batch listicle gastropub farm-to-table
-              lumbersexual salvia messenger bag. Coloring book flannel truffaut
-              craft beer drinking vinegar sartorial, disrupt fashion axe
-              normcore meh butcher. Portland 90's scenester vexillologist forage
-              post-ironic asymmetrical, chartreuse disrupt butcher paleo
-              intelligentsia pabst before they sold out four loko. 3 wolf moon
-              brooklyn.
+            <p className="leading-relaxed text-lg mb-4 break-keep">
+              힘들고, 어렵지만 문제를 해결한 만큼 큰 성취감을 느낄 수 있는 일,
+              눈에 보이는 피드백을 얻을 수 있는 일이기 때문에 흥미를 느끼고
+              있습니다. 포기하지 않고 도전하며 목표를 달성해 온 경험을 통해
+              지금도 성장하고 있습니다. 지치지 않고 앞으로 나아갈 준비된
+              개발자입니다. 노력하는 만큼 성장할 수 있는 개발 생태계를
+              좋아합니다!
             </p>
             <Link href="/projects" passHref legacyBehavior>
               <a className="w-max px-4 py-2 rounded inline-flex items-center bg-indigo-500 text-white">
