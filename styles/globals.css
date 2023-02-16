@@ -44,7 +44,7 @@ footer {
   bg-gray-100 dark:bg-slate-600/20;
 }
 
-a:not(.github) {
+a {
   @apply text-slate-500 dark:text-slate-300 dark:hover:text-slate-50;
 }
 
