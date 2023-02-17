@@ -21,9 +21,9 @@ export default function ProductItem({ data }) {
         quality={100}
       />
       <div className="p-4">
-        <strong>{title}</strong>
+        <strong className="block mb-2">{title}</strong>
         {github && (
-          <span className="block mt-2 mb-1">
+          <span className="block mb-1">
             <a
               href={github}
               className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
@@ -34,7 +34,7 @@ export default function ProductItem({ data }) {
           </span>
         )}
         {filelist && (
-          <span className="block mt-2 mb-1">
+          <span className="block mb-1">
             <a
               href={filelist}
               className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
