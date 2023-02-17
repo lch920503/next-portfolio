@@ -4,7 +4,7 @@ import Layout from "@/src/components/Layout";
 import ProjectList from "@/src/components/projects/ProjectList";
 
 export default function ProjectsPage({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <Layout>
       <Head>
