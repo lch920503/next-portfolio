@@ -1,38 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 구현사항
 
-## Getting Started
+- vercel 배포를 이용해 github와 연동.
+- Notion API를 이용해 해당 페이지에 데이터베이스 작업 시, 해당 내용이 자동으로 반영되도록 설정함.
+- 데이터가 변경되면 server에서 pre-rendering에 반영할 수 있도록 getServerSideProps를 이용해 작업.
+- next/image를 사용해 이미지 최적화.
+- 전역 상태관리를 위해 Context API를 이용하여 다크모드 구현. 로컬스토리지를 이용해 현재 모드 저장.
+- axios를 이용해 데이터 fetching.
 
-First, run the development server:
+## 어려웠던 점
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Notion api와 axios 사용에 익숙하지 않아 기존 fetch api로 작업 했던 부분을 axios로 변경하는데 에러 발생 및 오름차순 정렬 반영 안됨.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 해결 방법
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+axios 공식문서와 검색, notion api 공식 문서를 이용해 지속적으로 시도한 끝에 구현 완료.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 참고 링크
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+next/image 장단점, 특징 정리하기
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [https://velog.io/@joy37/NextImage에-대해-얼만큼-알아](https://velog.io/@joy37/NextImage%EC%97%90-%EB%8C%80%ED%95%B4-%EC%96%BC%EB%A7%8C%ED%81%BC-%EC%95%8C%EC%95%84)
