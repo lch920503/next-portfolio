@@ -5,10 +5,10 @@ export default function Contact() {
         <div className="flex flex-wrap -m-4">
           <div className="p-4 w-full">
             <div className="h-full bg-gray-100 dark:bg-gray-700 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+              <h2 className="text-sm title-font font-medium text-gray-400 mb-1 tracking-tight">
                 Contact
               </h2>
-              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
+              <h1 className="title-font sm:text-3xl text-2xl font-medium text-gray-900 mb-3">
                 이채현
               </h1>
               <p className="text-gray-400 mb-3">010-3914-6929</p>
