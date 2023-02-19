@@ -23,10 +23,10 @@ axios 공식문서와 검색, notion api 공식 문서를 이용해 지속적으
 ### 필수 props
 
 1. src  
-   정적 import된 이미지 파일  
-   외부 url (해당 경우는 next.config.js의 domain에 추가해두어야 해당 사이트에서 이미지를 받아올때 보안에 신경쓸 수 있음)
+   정적 import된 이미지 파일일 경우 필수.  
+   외부 url의 경우는 next.config.js의 domain에 추가해두어야 해당 사이트에서 이미지를 받아올때 보안에 신경쓸 수 있음.
 2. width, height  
-   layout이 fill 또는 정적으로 import 해오는 이미지(내부 이미지 폴더)의 경우를 제외하고는 모두 필수로 지정해주어야 합니다.
+   layout이 fill 또는 정적으로 import 해오는 이미지(내부 이미지 폴더)의 경우를 제외하고는 모두 필수로 지정해야 함.
 
 ### 옵셔널 props
 
