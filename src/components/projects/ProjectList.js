@@ -1,4 +1,4 @@
-import ProductItem from "./ProductItem";
+import ProjectItem from "./ProjectItem";
 
 export default function ProjectList({ data }) {
   return (
@@ -11,7 +11,7 @@ export default function ProjectList({ data }) {
       </strong>
       <ul className="max-w-screen-sm sm:max-w-screen-lg lg:w-3/4 grid grid-cols-1 gap-8 p-8 m-4 lg:grid-cols-2">
         {data.results.map((project) => (
-          <ProductItem key={project.id} data={project} />
+          <ProjectItem key={project.id} data={project} />
         ))}
       </ul>
     </section>

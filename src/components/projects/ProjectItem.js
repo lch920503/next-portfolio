@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ProductItem({ data }) {
+export default function ProjectItem({ data }) {
   const title = data.properties.name.title[0].plain_text;
   const tags = data.properties.tags.multi_select;
   const imgSrc = data.cover.file?.url || data.cover.external.url;
@@ -33,6 +33,15 @@ export default function ProductItem({ data }) {
             </a>
           </span>
         )}
+        <span className="block mb-1">
+          <a
+            href={url}
+            className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
+            target="_blank"
+          >
+            프로젝트 보러가기
+          </a>
+        </span>
         {filelist && (
           <span className="block mb-1">
             <a
@@ -44,15 +53,6 @@ export default function ProductItem({ data }) {
             </a>
           </span>
         )}
-        <span className="block mb-1">
-          <a
-            href={url}
-            className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
-            target="_blank"
-          >
-            프로젝트 보러가기
-          </a>
-        </span>
         <span>{skills}</span>
         <span className="tags flex flex-wrap">
           {tags.map((tag) => (
