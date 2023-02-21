@@ -241,6 +241,56 @@ export default function AboutMe() {
         <div className="container px-5 py-5 pb-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+              TOOLS
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              버전 관리 및 협업을 위해 사용한 툴들 입니다.
+            </p>
+          </div>
+          <ul className="flex flex-wrap -m-2">
+            <li className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="Github"
+                  className="w-16 h-16 object-cover object-center flex-shrink-0 mr-4"
+                  src="./images/github.png"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Github
+                  </h2>
+                  <p className="text-gray-500 break-keep">
+                    clone과 pull의 차이점을 알고 있으며, push와 commit을 주로
+                    이용합니다.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="Slack"
+                  className="w-16 h-16 object-cover object-center flex-shrink-0 mr-4"
+                  src="./images/slack.png"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Slack
+                  </h2>
+                  <p className="text-gray-500 break-keep">
+                    Slack을 통해 협업한 경험이 있습니다.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="text-gray-600 body-font w-5/6 mx-auto">
+        <div className="container px-5 py-5 pb-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               STUDY
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
