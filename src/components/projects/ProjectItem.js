@@ -33,15 +33,17 @@ export default function ProjectItem({ data }) {
             </a>
           </span>
         )}
-        <span className="block mb-1">
-          <a
-            href={url}
-            className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
-            target="_blank"
-          >
-            프로젝트 보러가기
-          </a>
-        </span>
+        {url && (
+          <span className="block mb-1">
+            <a
+              href={url}
+              className="inline-block font-bold dark:text-white text-slate-500 dark:bg-slate-400 bg-slate-200 px-2 py-1 rounded-lg"
+              target="_blank"
+            >
+              프로젝트 보러가기
+            </a>
+          </span>
+        )}
         {filelist && (
           <span className="block mb-1">
             <a
