@@ -6,7 +6,7 @@ export default function ProjectList({ data }) {
       <h2 className="text-4xl font-bold sm:text-6xl">
         총 프로젝트: {data.results.length}개
       </h2>
-      <span className="block mt-4 dark:text-white">
+      <span className="block mt-4 dark:text-white px-2 break-keep text-center">
         아래의 프로젝트 모두 <strong className="underline">참여도 100%</strong>
         의 작업물입니다.
       </span>
