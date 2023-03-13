@@ -6,6 +6,9 @@ export default function ProjectList({ data }) {
       <h2 className="text-4xl font-bold sm:text-6xl">
         총 프로젝트: {data.results.length}개
       </h2>
+      <p className="mt-4 text-4xl font-bold sm:text-2xl">
+        (프론트 개발 4개, 퍼블리싱 4개)
+      </p>
       <span className="block mt-4 dark:text-white px-2 break-keep text-center">
         아래의 프로젝트 모두 <strong className="underline">참여도 100%</strong>
         의 작업물입니다.
