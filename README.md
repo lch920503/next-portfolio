@@ -7,14 +7,6 @@
 - 전역 상태관리를 위해 Context API를 이용하여 다크모드 구현. 로컬스토리지를 이용해 현재 모드 저장.
 - axios를 이용해 데이터 fetching.
 
-## 어려웠던 점
-
-Notion api와 axios 사용에 익숙하지 않아 기존 fetch api로 작업 했던 부분을 axios로 변경하는데 에러 발생 및 오름차순 정렬 반영 안됨.
-
-## 해결 방법
-
-axios 공식문서와 검색, notion api 공식 문서를 이용해 지속적으로 시도한 끝에 구현 완료.
-
 ## next/image 장단점 및 특징
 
 - 이미지 캐싱도 자동으로 해주고 expiration time 설정도 가능.
